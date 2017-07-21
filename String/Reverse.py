@@ -23,8 +23,15 @@ def reverseSentence(String):
 
     return reversedString.rstrip()
 
+# 递归求反
+def reverseWord(word):
+    
+    if len(word) <= 1:
+        return word
+    else:
+        return reverseWord(word[1:]) + word[0]
 
-
+'''
 def reverseWord(word):
 
     Word = list(word)
@@ -41,14 +48,14 @@ def reverseWord(word):
         Word[-j] = temp
 
     return "".join(Word)
-        
+'''        
 
 if __name__=="__main__":
 
     string1 = "dog loves pig"
     string2 = "l am a student."
 
-    S = string2
+    S = string1
     print "input %s"%S
     rstring = reverseSentence(S)
     # rstring = reverseWord(S)
