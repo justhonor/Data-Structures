@@ -45,8 +45,7 @@ class Tree(object):
         else:
             # 使用队列,对已有节点进行层次遍历
             myqueue = []
-            currentNode = self.root
-            myqueue.append(currentNode)
+            myqueue.append(self.root)
             while myqueue:
                 currentNode = myqueue.pop(0)         # 队列弹出当前节点
                 # print "当前节点值:%s"%currentNode.elem
@@ -196,27 +195,27 @@ class Tree(object):
 
 if __name__ == "__main__":
     # 生成树,并加入节点
-    elems = range(8)
+    elems = range(1,9)
     tree = Tree()
 
     for elem in elems:
 		tree.add(elem)
     
-    print '队列实现层次遍历:'
-    tree.levelQueue(tree.root)
+    # print '队列实现层次遍历:'
+    # tree.levelQueue(tree.root)
 
-    print '递归实现先序遍历:'
-    tree.frontRecur(tree.root)
-    print '递归实现中序遍历:' 
-    tree.middleRecur(tree.root)
-    print '递归实现后序遍历:'
-    tree.laterRecur(tree.root)
+    # print '递归实现先序遍历:'
+    # tree.frontRecur(tree.root)
+    # print '递归实现中序遍历:' 
+    # tree.middleRecur(tree.root)
+    # print '递归实现后序遍历:'
+    # tree.laterRecur(tree.root)
 
     print '堆栈实现先序遍历:'
     tree.frontStack(tree.root)
 
-    print '堆栈实现中序遍历:'
-    tree.middleStack(tree.root)
+    # print '堆栈实现中序遍历:'
+    # tree.middleStack(tree.root)
     
-    print '堆栈实现后序遍历:'
-    tree.laterStack(tree.root)
+    # print '堆栈实现后序遍历:'
+    # tree.laterStack(tree.root)
