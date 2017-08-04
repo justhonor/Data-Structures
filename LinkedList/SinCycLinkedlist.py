@@ -15,7 +15,6 @@ class Node(object):
         self.item = item
         self.next = None
 
-
 class SinCycLinkedlist(object):
     """单向循环链表"""
     def __init__(self):
@@ -139,8 +138,6 @@ class SinCycLinkedlist(object):
                 node.next = self._head
                 self._head = node
                 return self._head
-
-
 
     def remove(self, item):
         """删除一个节点"""
