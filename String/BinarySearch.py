@@ -47,7 +47,7 @@ def BinarySearch(List,key):
     print "BS 没有找到",key
 
 # 注意right 是下标不是长度
-#@TCT(100)
+@TCT(100)
 def BinarySearch_Recur(List,key,left,right):
     mid = (left + right) / 2
     if left > right:
@@ -69,6 +69,6 @@ L1 = [1,2,3,4,5,6,7,8,9,12,13,45,67,89,99,101,111,123,134,565,677]
 #L1 = [1,2,3,4,5,6,7,8,9]
 
 BinarySearch_Recur(L1,111,0,len(L1)-1)
-#BinarySearch(L1,111)
+BinarySearch(L1,111)
 
 

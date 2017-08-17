@@ -21,6 +21,7 @@ def reverseSentence(String):
     for word in rString.split():
         reversedString = reversedString + reverseWord(word) + " "
 
+    print "ssdf",reversedString
     return reversedString.rstrip()
 
 # 递归求反

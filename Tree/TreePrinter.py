@@ -60,7 +60,7 @@ class Tree(object):
 		myqueue.append(root)
 		string = ""
 		while myqueue:
-			cur = myqueue.pop(0	)
+			cur = myqueue.pop(0)
 			string += str(cur.elem)
 
 			if cur.lchild is not None:
